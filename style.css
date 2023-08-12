@@ -1,0 +1,436 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    background-color: #191919;
+    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.Nav_container {
+    background-color: #312631;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 1.5px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: white;
+    padding: 10px 0;
+    transform: translateY(0);
+    transition: transform 0.3s; /* Apply smooth transition */
+    z-index: 1000;
+}
+
+.items {
+    margin: 0.2px;
+    align-items: center;
+    display: inline-flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.2;
+    justify-content: space-around;
+}
+
+a {
+    color: #cccc;
+    width: 70%;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Style for links with hover */
+.items:hover {
+    color: #555;
+}
+
+.background {
+    object-fit: cover;
+}
+
+img {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+}
+
+.Manga_List {
+    color: #fff;
+    text-align: center;
+    padding: 6px;
+    background-color: #312631;
+    border: 2px solid #675575;
+    margin: 8px;
+    border-radius: 4px;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+}
+
+
+.Manga_List:hover {
+    background-color: #3a3145;
+    cursor: pointer;
+}
+
+
+.Manga_List-container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: whitesmoke;
+    align-items: center;
+}
+
+.card {
+    height: 500px;
+    margin: 50px;
+    box-shadow: 6px 6px 20px black;
+    overflow: hidden;
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+}
+
+.Manga_List-container img {
+    height: 500px;
+    width: 320px;
+    border-radius: 3px;
+}
+
+.intro {
+    padding: 12px;
+    box-sizing: border-box;
+    position: absolute;
+    background: rgba(103, 112, 134, 0.9);
+    color: #fff;
+    border-radius: 5px;
+    bottom: 0;
+    /* Place the .intro at the bottom of the .card */
+    left: 0;
+    width: 100%;
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: 25px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+
+
+/* Anime List Design*/
+.Anime_List {
+    margin: 0;
+    padding: 0;
+
+
+    color: #fff;
+    text-align: center;
+    padding: 6px;
+    background-color: #312631;
+    border: 2px solid #675575;
+    margin: 10px;
+    margin-top: 3%;
+    border-radius: 4px;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase; 
+}
+
+.Anime_List:hover {
+    background-color: #3a3145;
+    cursor: pointer;
+}
+
+
+
+
+/* DropDwon menu custome*/ 
+.menu select {
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #675575;
+    border-radius: 4px;
+    background-color: #312631;
+    color: #fff;
+    outline: none;
+}
+
+.menu select:hover {
+    background-color: #3a3145;
+    border-color: #675575;
+}
+
+.show-video iframe {
+    margin-right: 20px;
+    width: 560px;
+    height: 310px;
+    box-sizing: border-box;
+    border: 2px solid red;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.avatar-preface {
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+    color: aliceblue;
+    border: 2px solid #ccc;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.avatar-preface:hover {
+    background-color: rgba(103, 112, 134, 0.9);
+    cursor: pointer;
+}
+
+
+
+
+/***************/
+.board {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.video-container {
+    margin-right: 20px;
+}
+
+.video-container iframe {
+    width: 560px;
+    height: 310px;
+    box-sizing: border-box;
+    border: 2px solid red;
+}
+
+.profile {
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+    color: aliceblue;
+    border: 2px solid #ccc;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.profile h1 {
+    font-weight: bold;
+}
+
+.profile:hover {
+    background-color: rgba(103, 112, 134, 0.9);
+    cursor: pointer;
+}
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    padding: 6px;
+    margin: 6px;
+    background-color: #312631;
+    border: 2px solid #675575;
+    border-radius: 4px;
+}
+
+.about-me:hover {
+    background-color: #3a3145;
+    cursor: pointer;
+}
+
+.presentation {
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+    color: aliceblue;
+    border: 2px solid #ccc;
+    padding: 30px;
+    border-radius: 5px;
+    
+}
+
+.presentation p{
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+
+
+/* Back to Top Button Styling */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 20%;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    display: none;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 20px 10px rgba(0, 0, 0, 0.3);
+}
+
+.back-to-top:hover {
+    background-color: #333;
+    transform: scale(1.1);
+}
+
+.back-to-top.show {
+    animation: fadeIn 0.3s forwards;
+}
+
+
+
+/* Mobile-first responsive design */
+@media screen and (max-width: 768px) {
+    .Nav_container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 5px;
+    }
+
+    .items {
+        font-size: 1.2rem;
+    }
+
+    .background video {
+        width: 100%;
+        height: auto;
+    }
+
+    .Manga_List,
+    .Anime_List,
+    .about-me {
+        font-size: 16px;
+        padding: 4px;
+    }
+
+    .Manga_List-container,
+    .Anime_List-container,
+    .about-me {
+        margin: 4px;
+    }
+
+    .card {
+        height: auto;
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .Manga_List-container img,
+    .video-container iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .profile,
+    .avatar-preface {
+        padding: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive styles */
+
+@media (max-width: 1030px) {
+    .card {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .Nav_container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .Manga_List-container {
+        height: auto;
+    }
+
+    .card {
+        width: 80%;
+        margin: 20px;
+    }
+
+    .Manga_List-container img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 18px;
+    }
+
+    .items {
+        font-size: 16px;
+        padding: 3px;
+    }
+
+    .Manga_List,
+    .Anime_List {
+        font-size: 16px;
+        padding: 4px;
+    }
+
+    .Manga_List-container,
+    .Anime_List-container {
+        margin-top: 5%;
+    }
+
+    .profile {
+        flex-direction: row;
+
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px;
+    }
+}

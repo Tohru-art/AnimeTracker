@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeTrackr</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/151906179e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="Nav_container">
+        <div class="title">
+            <h1> AnimeTrackr. </h1>
+        </div>
+        <a href="#Home">
+            <div class="items">Home</div>
+        </a>
+        <a href="#Anime List">
+            <div class="items">Anime List</div>
+        </a>
+        <a href="#Manga List">
+            <div class="items">Manga List</div>
+        </a>
+        <a href="#About Me">
+            <div class="items">About Me</div>
+        </a>
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-bag-shopping"></i>
+    </nav>
+
+    <div class="background">
+        <video width="1270" height="auto" loop autoplay>
+            <source
+                src="https://static.hidive.com/welcome/custom/q2-2023/HIDIVE_2023_Q2_Spring_Simulcast_1200x675_REV.mp4"
+                type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+    </div>
+
+    <!-- Manga Icon List Title-->
+    <div class="Manga_List">
+        <h2>Manga List &nbsp; <i class="fa-solid fa-book"></i></h2>
+    </div>
+
+    <!-- Manga List section design -->
+    <section class="Manga List" id="Manga List">
+        <div class="Manga_List-container">
+            <div class="card">
+                <img src="Manga_list/Ao-no-Hako-cover.jpg" src="https://i.imgur.com/VDH3RVF.jpg" alt="Ao-no-Hako-cover">
+
+                <div class="intro">
+                    <h1> Ao no Hako</h1>
+                    <p>Taiki Inomata is on the boys' badminton team at sports powerhouse Eimei Junior and Senior High.
+                        He's in love with basketball player Chinatsu Kano, the older girl he trains alongside every
+                        morning in the gym. One Spring day, their relationship takes a sharp turn.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Manga_list/Jujutsu-Kaisen-cover.png" src="https://i.imgur.com/NICaLUA.jpg"
+                    alt="Jujutsu-Kaisen-cover">
+
+                <div class="intro">
+                    <h1>Jujutsu Kaisen</h1>
+                    <p>Yuji Itadori, a kind-hearted teenager, joins his school's Occult Club for fun, but discovers that
+                        its members are actual sorcerers who can manipulate the energy between beings for their own use.
+                        He hears about a cursed talisman - the finger of Sukuna, a demon - and its being targeted by
+                        other cursed beings.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Manga_list/Chi-no-Wadachi-cover.jpg" src="https://i.imgur.com/57m4VTc.jpg"
+                    alt="Chi-no-Wadachi-cover">
+
+                <div class="intro">
+                    <h1>Chi no Wadachi</h1>
+                    <p>Ordinary middle school student Seiichi Osabe receives love and care from his mother Seiko. Until
+                        one summer an incident changes the family dynamic forever. This is a story of a mother’s love
+                        that has gone too far….</p>
+                </div>
+            </div>
+    </section>
+
+
+    <section class="Manga List" id="Manga List">
+        <div class="Manga_List-container">
+            <div class="card">
+                <img src="Manga_list/Kaijuu-8-gou-cover.jpg" src="https://i.imgur.com/c2rHXKg.jpg"
+                    alt="Kaijuu-8-gou-cover">
+                <div class="intro">
+                    <h1>Kaijuu 8 Gōu!</h1>
+                    <p>A man, unhappy with the work he has had to do in life, is involved in an unexpected event ...! He
+                        becomes a Kaijuu, a monstrous creature, giving him a new chance to achieve what he always
+                        dreamed of!</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Manga_list/black-clover-cover.jpg " src="https://i.imgur.com/tq1mql7.jpg"
+                    alt="black-clover-cover">
+                <div class="intro">
+                    <h1>Black Clover</h1>
+                    <p>Asta is a young boy who dreams of becoming the greatest mage in the kingdom. Only one problem—he
+                        can't use any magic! Luckily for Asta, he receives the incredibly rare five-leaf clover grimoire
+                        that gives him the power of anti-magic. Can someone who can't use magic really become the Wizard
+                        King? One thing's for sure—Asta will never give up!</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Manga_list/BNHA-cover.jpeg" src="https://i.imgur.com/mjECg9k.jpg" alt="BNHA-cover">
+                <div class="intro">
+                    <h1>My Hero Academia</h1>
+                    <p>Middle school student Izuku Midoriya wants to be a hero more than anything, but he hasn't got an
+                        ounce of power in him. With no chance of ever getting into the prestigious U.A. High School for
+                        budding heroes, his life is looking more and more like a dead end. Then an encounter with All
+                        Might, the greatest hero of them all, gives him a chance to change his destiny…</p>
+                </div>
+            </div>
+
+    </section>
+
+    <!-- Anime Icon List Title-->
+    <div class="Anime_List">
+        <h2>Anime List &nbsp; <i class="fa-solid fa-tv"></i></h2>
+    </div>
+
+    <form class="menu">
+        <select id="dropdown">
+            <option value="no choice">CHOOSE YOR ANIME</option>
+            <option value="Haikyuu">Haikyuu</option>
+            <option value="Naruto">Naruto Shippuden</option>
+            <option value="FMA">Full Meta Alchemist</option>
+            <option value="Bleach">BLEACH</option>
+        </select>
+
+        <!-- <button id="select">Select</button> -->
+    </form>
+
+    <div class="container">
+        <div class="show-video">
+            <iframe id="shows_video" width="" height="" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="avatar-preface">
+            <p id="shows_description"></p>
+        </div>
+
+        <!-- <div id="shows_description"></div> -->
+    </div>
+
+    <!-- Anime List section design -->
+    <section class="Anime List" id="Anime List">
+        <div class="Anime_List-container">
+            <div class="board">
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/lNMSqxQtO0w"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="profile">
+                    <h1> ONE PIECE </h1>
+                    <p>Here's a first look at the live action adaptation of the most popular manga in history, written
+                        by Eiichiro Oda. ONE PIECE sets sail on August 31st only on Netflix.</p>
+                </div>
+            </div>
+
+            <div class="board">
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/XSaBR58f7I0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="profile">
+                    <h1> SUICIDE SQUAD </h1>
+                    <p>While details about the plot of Suicide Squad ISEKAI are still under wraps, the series promises
+                        to deliver a wild ride filled with mayhem and adventure. The official synopsis hints at the
+                        Suicide Squad, including Harley Quinn and the Joker, being transported to an isekai world to
+                        complete a mysterious mission for Amanda Waller.</p>
+                </div>
+            </div>
+
+            <div class="board">
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/I6JIwjWOhnQ?controls=0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="profile">
+                    <h1> SOLO LEVELING </h1>
+                    <p>In a world where hunters, humans who possess magical abilities, must battle deadly monsters to
+                        protect the human race from certain annihilation, a notoriously weak hunter named Sung Jinwoo
+                        finds himself in a seemingly endless struggle for survival.</p>
+                </div>
+            </div>
+
+    </section>
+
+
+    <div class="about-me">
+        <h2>ABOUT ME</h2>
+    </div>
+
+    <section class="About Me" id="About Me">
+        <div class="presentation">
+            <p>Hello, everyone! I'm Will, an 18-year-old with a burning passion for coding, especially in the realm of
+                web development. This summer, I had the incredible opportunity to be a part of All Star Code, an
+                experience that has truly transformed my coding journey. As an All Star Code student, I've been diving
+                headfirst into the world of coding, learning the ins and outs of HTML, CSS, and JavaScript while
+                creating dynamic and visually stunning websites. I've honed my skills through various projects and
+                coding challenges, earning recognition for my dedication and innovative thinking. Beyond just the
+                technical skills, this journey has been about personal growth - expanding my horizons, fostering
+                creativity, and developing critical problem-solving abilities.</p>
+        </div>
+    </section>
+
+    <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+
+</body>
+
+</html>
